@@ -9,7 +9,8 @@ Network architecture:
 
 ![image](https://user-images.githubusercontent.com/51236251/135278429-6099d5da-c826-4aa2-8cca-b7c774beb14a.png)
 
-![image](https://user-images.githubusercontent.com/51236251/135278619-8e39fb0b-3afd-4848-a8a1-e92cda61f678.png)
+![image](https://user-images.githubusercontent.com/51236251/135278803-b6769574-e70f-480b-8cb1-6a9934328844.png)
+
 
 
 Comparison with SOTA:
