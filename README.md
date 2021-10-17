@@ -1,4 +1,4 @@
-# DB-AIAT: A Dual-branch attention-in-attention transformer for single-channel SE
+### DB-AIAT: A Dual-branch attention-in-attention transformer for single-channel SE (https://arxiv.org/abs/2110.06467)
 This is the repo of the manuscript "Dual-branch Attention-In-Attention Transformer for speech enhancement", which is to be submitted to ICASSP2022.
  The source code will be released soon!
 
@@ -26,7 +26,7 @@ Abstract：Curriculum learning begins to thrive in the speech enhancement area, 
 If you use our code in your research or wish to refer to the baseline results, please use the following BibTeX entry.
 
     @article{yu2021dual,
-  	title={Dual-branch Attention-In-Attention Transformer for single-channel 	speech enhancement},
+  	title={Dual-branch Attention-In-Attention Transformer for single-channel speech enhancement},
   	author={Yu, Guochen and Li, Andong and Wang, Yutian and Guo, Yinuo and Wang, Hui and Zheng, Chengshi},
   	journal={arXiv preprint arXiv:2110.06467},
   	year={2021}
