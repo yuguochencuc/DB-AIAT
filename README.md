@@ -21,3 +21,13 @@ Abstract：Curriculum learning begins to thrive in the speech enhancement area, 
 ![image](https://user-images.githubusercontent.com/51236251/134447114-74429af8-7c10-465d-8a1e-ddf0ec636b4e.png)
 
 ![image](https://user-images.githubusercontent.com/51236251/135372322-c0968258-6935-4f8e-bcf6-7d303c310d04.png)
+
+### Citation
+If you use our code in your research or wish to refer to the baseline results, please use the following BibTeX entry.
+
+    @article{yu2021dual,
+  	title={Dual-branch Attention-In-Attention Transformer for single-channel 	speech enhancement},
+  	author={Yu, Guochen and Li, Andong and Wang, Yutian and Guo, Yinuo and Wang, Hui and Zheng, Chengshi},
+  	journal={arXiv preprint arXiv:2110.06467},
+  	year={2021}
+	}
