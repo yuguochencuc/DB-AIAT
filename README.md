@@ -27,7 +27,6 @@ The code for network architecture is privoided now, while the trainer is release
 
 ### Ablation study:
 
-![image](https://user-images.githubusercontent.com/51236251/138376989-a773f56e-a124-4b5a-830a-13f8ac608a8c.png)
 
 ![image](https://user-images.githubusercontent.com/51236251/135372322-c0968258-6935-4f8e-bcf6-7d303c310d04.png)
 
