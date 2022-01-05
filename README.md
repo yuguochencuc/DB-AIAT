@@ -9,7 +9,6 @@ Abstract：Curriculum learning begins to thrive in the speech enhancement area, 
 
 ![image](https://user-images.githubusercontent.com/51236251/135278429-6099d5da-c826-4aa2-8cca-b7c774beb14a.png)
 
-![image](https://user-images.githubusercontent.com/51236251/135278803-b6769574-e70f-480b-8cb1-6a9934328844.png)
 
 
 ### Comparison with SOTA:
