@@ -8,6 +8,13 @@ Abstract：Curriculum learning begins to thrive in the speech enhancement area, 
 ### Code:
 you can use dual_aia_trans_merge_crm() in aia_trans.py for dual-branch SE, while aia_complex_trans_mag() and aia_complex_trans_ri() are single-branch aprroaches.
 
+### requirements:
+	
+	CUDA 10.1
+	torch == 1.8.0
+	pesq == 0.0.1
+	librosa == 0.7.2
+
 ### Network architecture:
 
 ![image](https://user-images.githubusercontent.com/51236251/135278429-6099d5da-c826-4aa2-8cca-b7c774beb14a.png)
