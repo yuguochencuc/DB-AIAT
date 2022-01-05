@@ -18,7 +18,7 @@ import sys
 from functools import reduce
 from torch.nn.modules.module import _addindent
 import scipy.linalg as linalg
-from config_mag import feat_type, fft_num, win_size, win_shift
+from config_merge import feat_type, fft_num, win_size, win_shift
 
 EPSILON = 1e-10
 
@@ -101,7 +101,7 @@ def pesq_loss(esti_list, label_list, frame_list):
 def eval_pesq(id, esti_utts, clean_utts):
     clean_utt = clean_utts[id]
     esti_utt = esti_utts[id]
-    pesq_score = pesq(16000, clean_utt, esti_utt, 'wb')
-    # pesq_score = pesq(clean_utt, esti_utt, fs=16000)
+    #pesq_score = pesq(16000, clean_utt, esti_utt, 'wb')
+    pesq_score = pesq(clean_utt, esti_utt, fs=16000)
 
     return pesq_score
