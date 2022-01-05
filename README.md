@@ -14,6 +14,7 @@ you can use dual_aia_trans_merge_crm() in aia_trans.py for dual-branch SE, while
 	torch == 1.8.0
 	pesq == 0.0.1
 	librosa == 0.7.2
+	SoundFile == 0.10.3
 
 ### Network architecture:
 
