@@ -186,7 +186,7 @@ class AIA_Transformer_merge(nn.Module):
         input_ri = self.input(input_merge)
         for i in range(len(self.row_trans)):
             if i >=1:
-                output_mag_i = input_mag + output_list_ri[-1]
+                output_mag_i = output_list_mag[-1] + output_list_ri[-1]
             else: output_mag_i = input_mag
             AFA_input_mag = output_mag_i.permute(3, 0, 2, 1).contiguous().view(dim1, b*dim2, -1)  # [F, B*T, c]
             AFA_output_mag = self.row_trans[i](AFA_input_mag)  # [F, B*T, c]
