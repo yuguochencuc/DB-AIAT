@@ -1,8 +1,4 @@
-"""
-This script is the backup function used to support backup support for the SE system
-Author: Andong Li
-Time: 2019/05
-"""
+
 import torch
 import torch.nn as nn
 
