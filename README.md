@@ -20,8 +20,8 @@ The trained weights on VB dataset is also provided. You can directly perform inf
 ### Step1
 prepare your data. Run json_extract.py to generate json files, which records the utterance file names for both training and validation set
 
-	# Run main.py to begin network training 
-	main.py
+	# Run json_extract.py
+	json_extract.py
 	
 ### Step2
 change the parameter settings accroding to your directory (within config_merge.py)
@@ -30,14 +30,14 @@ change the parameter settings accroding to your directory (within config_merge.p
 Network Training (you can also use aia_complex_trans_mag() and aia_complex_trans_ri() network in aia_trans.py for single-branch SE)
 
 	# Run main.py to begin network training 
-	# solver_merge.py and train_merge.py contains detailed training process
+	# solver_merge.py and train_merge.py contain detailed training process
 	main_merge.py
 
 
 ### Inference:
 The trained weights vb_aia_merge_new.pth.tar on VB dataset is also provided in BEST_MODEL. 
-
-	run enhance.py to enhance the noisy speech samples.
+	# Run main.py to enhance the noisy speech samples.
+	enhance.py 
 
 ### Comparison with SOTA:
 
