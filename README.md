@@ -19,14 +19,16 @@ Abstract：Curriculum learning begins to thrive in the speech enhancement area, 
 ### How to train
 ### Step1
 prepare your data. Run json_extract.py to generate json files, which records the utterance file names for both training and validation set
+
 	# Run main.py to begin network training 
 	main.py
 	
 ### Step2
-	change the parameter settings accroding to your directory (within config_merge.py)
+change the parameter settings accroding to your directory (within config_merge.py)
 	
 ### Step3
 Network Training (you can also use aia_complex_trans_mag() and aia_complex_trans_ri() network in aia_trans.py for single-branch SE)
+
 	# Run main.py to begin network training 
 	# solver_merge.py and train_merge.py contains detailed training process
 	main_merge.py
