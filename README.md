@@ -5,12 +5,8 @@ This is the repo of the manuscript "Dual-branch Attention-In-Attention Transform
 Abstract：Curriculum learning begins to thrive in the speech enhancement area, which decouples the original spectrum estimation task into multiple easier sub-tasks to achieve better performance. Motivated by that, we propose a dual-branch attention-in-attention transformer-based module dubbed DB-AIAT to handle both coarse- and fine-grained regions of spectrum in parallel. From a complementary perspective, a magnitude masking branch is proposed to estimate the overall spectral magnitude, while a complex refining branch is designed to compensate for the missing complex spectral details and implicitly derive phase information. Within each branch, we propose a novel attention-in-attention transformer-based module to replace the conventional RNNs and temporal convolutional network for temporal sequence modeling. Specifically, the proposed attention-in-attention transformer consists of adaptive temporal-frequency attention transformer blocks and an adaptive hierarchical attention module, which can capture long-term time-frequency dependencies and further aggregate global hierarchical contextual information. The experimental results on VoiceBank + Demand dataset show that DB-AIAT yields state-of-the-art performance (e.g., 3.31 PESQ, 95.6% STOI and 10.79dB SSNR) over previous advanced systems with a relatively light model size (2.81M).
 
 ### Code:
-	The code for network architecture is privoided now, while the trainer is released soon. You can use dual_aia_trans_merge_crm() in aia_trans.py for dual-branch SE, while aia_complex_trans_mag() and aia_complex_trans_ri() are single-branch aprroaches.
+	You can use dual_aia_trans_merge_crm() in aia_trans.py for dual-branch SE, while aia_complex_trans_mag() and aia_complex_trans_ri() are single-branch aprroaches.
 	The trained weights on VB dataset is also provided. You can directly perform inference or finetune the model by using vb_aia_merge_new.pth.tar. 
-
-### Inference:
-	The trained weights vb_aia_merge_new.pth.tar on VB dataset is also provided in BEST_MODEL. 
-	you can run python enhance.py to enhance the noisy speech samples.
 
 ### requirements:
 	
@@ -20,7 +16,25 @@ Abstract：Curriculum learning begins to thrive in the speech enhancement area, 
 	librosa == 0.7.2
 	SoundFile == 0.10.3
 
+### How to train
+### Step1
+prepare your data. Run json_extract.py to generate json files, which records the utterance file names for both training and validation set
+	# Run main.py to begin network training 
+	main.py
+	
+### Step2
+	change the parameter settings accroding to your directory (within config_merge.py)
+	
+### Step3
+Network Training (you can also use aia_complex_trans_mag() and aia_complex_trans_ri() network in aia_trans.py for single-branch SE)
+	# Run main.py to begin network training 
+	# solver_merge.py and train_merge.py contains detailed training process
+	main_merge.py
 
+
+### Inference:
+The trained weights vb_aia_merge_new.pth.tar on VB dataset is also provided in BEST_MODEL. 
+	run python enhance.py to enhance the noisy speech samples.
 
 ### Comparison with SOTA:
 
