@@ -1,0 +1,37 @@
+# Configuration for Cog ⚙️
+# Reference: https://github.com/replicate/cog/blob/main/docs/yaml.md
+
+build:
+  # set to true if your model requires a GPU
+  gpu: true
+
+  # a list of ubuntu apt packages to install
+  system_packages:
+    - "libsndfile1"
+    - "ffmpeg"
+
+  # python version in the form '3.8' or '3.8.12'
+  python_version: "3.8"
+
+  # a list of packages in the format <package-name>==<version>
+  python_packages:
+    - "h5py==3.6.0"
+    - "hdf5storage==0.1.18"
+    - "joblib==1.1.0"
+    - "librosa==0.8.0"
+    - "numpy==1.21.4"
+    - "ptflops==0.6.8"
+    - "scipy==1.8.0"
+    - "soundfile==0.10.3.post1"
+    - "torch==1.8.0"
+    - "Cython==0.29.27"
+
+  # commands run after the environment is setup
+  run:
+    # need to install pesq here since it requires numpy to be installed at build time
+    - "pip install pesq==0.0.1"
+
+# predict.py defines how predictions are run on your model
+predict: "predict.py:Predictor"
+
+image: "r8.im/yuguochencuc/db-aiat"
