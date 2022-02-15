@@ -1,4 +1,7 @@
 ### DB-AIAT: A Dual-branch attention-in-attention transformer for single-channel SE (https://arxiv.org/abs/2110.06467)
+
+<a href="https://replicate.com/yuguochencuc/db-aiat"><img src="https://replicate.com/yuguochencuc/db-aiat/badge"></a>
+
 This is the repo of the manuscript "Dual-branch Attention-In-Attention Transformer for speech enhancement", which is accepted by ICASSP2022.
 
 
